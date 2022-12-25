@@ -1,4 +1,6 @@
 const express = require("express");
+const admin = require("../../middlewares/admin");
+const auth = require("../../middlewares/auth");
 const Course = require("../../models/coursemodel")
 const Router = express.Router();
 
@@ -27,7 +29,7 @@ Router.post("/", async(req, res)=>{
     res.send(course)
 })
 
-Router.delete("/:id", async (req, res) => {
+Router.delete("/:id", auth, admin, async (req, res) => {
     let course = await Course.findById(req.params.id);
     if(!course){
        return res.send({
@@ -42,7 +44,7 @@ Router.delete("/:id", async (req, res) => {
     });
 });
 
-Router.put("/:id", async (req, res) => {
+Router.put("/:id", auth, admin, async (req, res) => {
     let course = await Course.findById(req.params.id);
 
     if(!course){

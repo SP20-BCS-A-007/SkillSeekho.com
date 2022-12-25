@@ -2,6 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const Course = require("./models/coursemodel")
 const courseApiRouter = require("./routes/api/course")
+const usersApiRouter = require("./routes/api/users")
 var customLogger = require("./middlewares/logger");
 const app = express();
 app.use(customLogger)
@@ -9,8 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const port = 2000;
 mongoose.set('strictQuery', true);
+app.use("/api/users", usersApiRouter)
 app.use("/api/courses",courseApiRouter)
-
 app.get("/", (req, res)=>{
     res.send("Hello")
 })
