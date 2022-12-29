@@ -30,7 +30,7 @@
   background-color: red;
   background-image: url("../public/image1.jpg");
   background-position: revert;
-  height: 500px;
+  height: auto;
 }
 
 .jumbotronsetting {

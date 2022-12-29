@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Jumbotron = () => {
   return (
     <>
-      <div className="jumbotron">
+      <div className="jumbotron bg-image">
         <div className="jumbotronsetting container-fluid">
           <h4 className="mb-3">Start Learning New Skills</h4>
           <h1 className="mb-3">
