@@ -1,17 +1,16 @@
-import './App.css';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import TopMenu from './components/topmenu';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Courses from './components/Courses';
 import Instructors from './components/Instructors';
 import NotFound from './components/NotFound';
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <Router>
-    <TopMenu />
+    <NavBar/>
     <Routes>
       <Route path="/instructors" element={<Instructors/>}/>
       <Route path="/courses" element={<Courses/>}/>

@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
+import Features from "./Features";
+import Jumbotron from "./Jumbotron";
 const Home = () => {
-    return (  
-        <div>
-            <h1>Home Page</h1>
-        </div>
-    );
-}
- 
+  return (
+    <>
+      <Jumbotron/>
+      <Features/>
+    </>
+  );
+};
+
 export default Home;

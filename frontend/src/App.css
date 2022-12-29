@@ -1,0 +1,50 @@
+.link {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1.05rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.link:hover {
+  color: black;
+  background-color: #ffd36e;
+  border-radius: 5px;
+}
+
+.logotext {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #FFC200;
+  margin-left: 20px;
+  margin-right: 90px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logotext:hover {
+  color: #FFC200;
+}
+
+.jumbotron {
+  padding: 3rem;
+  background-color: red;
+  background-image: url("../public/image1.jpg");
+  background-position: revert;
+  height: 500px;
+}
+
+.jumbotronsetting {
+  margin-top: 5%;
+}
+
+.jumbotronsetting h4 {
+  color: white;
+}
+.jumbotronsetting h1 {
+  font-size: 4rem;
+}
+.jumbotronsetting p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
