@@ -28,7 +28,7 @@
 .jumbotron {
   padding: 3rem;
   background-color: red;
-  background-image: url("../public/image1.jpg");
+  background-image: url("./images/image1.jpg");
   background-position: revert;
   height: auto;
 }

@@ -1,10 +1,12 @@
 const express = require("express")
 const mongoose = require("mongoose")
+const cors = require("cors");
 const Course = require("./models/coursemodel")
 const courseApiRouter = require("./routes/api/course")
 const usersApiRouter = require("./routes/api/users")
 var customLogger = require("./middlewares/logger");
 const app = express();
+app.use(cors());
 app.use(customLogger)
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

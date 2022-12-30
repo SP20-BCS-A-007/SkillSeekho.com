@@ -11,7 +11,7 @@ const Jumbotron = () => {
             Start Learning New Skills From Our Experienced And Expert Team
           </h1>
           <p>Discover you passion and how to level up with our skills guide</p>
-          <Button variant="secondary">Let's Get Started</Button>
+          <Button className="mb-5" variant="secondary">Let's Get Started</Button>
         </div>
       </div>
     </>

@@ -6,6 +6,7 @@ import Courses from './components/Courses';
 import Instructors from './components/Instructors';
 import NotFound from './components/NotFound';
 import NavBar from "./components/NavBar";
+import CourseCard from "./components/CourseCard";
 
 function App() {
   return (
@@ -20,8 +21,6 @@ function App() {
       <Route path="/" element={<Home />} />
     </Routes>
     </Router>
-       
-    
   );
 }
 
