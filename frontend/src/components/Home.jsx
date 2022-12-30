@@ -12,6 +12,10 @@ const Home = () => {
     <>
       <Jumbotron />
       <Container className="mt-5 mb-5">
+      <div className="text-center mb-5">
+        <h1 style={{color: "#FFC200", fontSize: "3.5rem"}}>About Us</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi illum vero neque numquam quas! Porro cum nobis, rem fugiat sapiente non ducimus dolor, quisquam consectetur dicta tenetur totam accusamus fuga.</p>
+        </div>
         <Row>
           <Col>
             <Features
@@ -38,7 +42,8 @@ const Home = () => {
       </Container>
       <Container className="mt-5 mb-5">
         <div className="text-center">
-        <h1>Our Courses</h1>
+        <h1 style={{color: "#FFC200", fontSize: "3.5rem"}}>Our Courses</h1>
+        <h4>What You Will Learn</h4>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi illum vero neque numquam quas! Porro cum nobis, rem fugiat sapiente non ducimus dolor, quisquam consectetur dicta tenetur totam accusamus fuga.</p>
         </div>
         <Row>

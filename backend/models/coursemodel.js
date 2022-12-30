@@ -6,10 +6,7 @@ const courseSchema = mongoose.Schema({
     price: Number,
     time: String,
     category: String,
-    image:{
-        public_id: String,
-        url: String
-    },
+    img_url: String,
     content:[
         {
             content_title: String,
