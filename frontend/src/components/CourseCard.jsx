@@ -31,7 +31,7 @@ const CourseCard = () => {
         <Row>
           {courses.map((course) => (
             <Col className="col-4" key={course._id}>
-              <Card>
+              <Card className="mb-3">
                 <Card.Img style={{height: "14rem"}} variant="top" src={course.img_url} />
                 <Card.Body>
                   <Card.Title>{course.title}</Card.Title>

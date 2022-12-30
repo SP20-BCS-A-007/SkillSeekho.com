@@ -40,7 +40,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="mt-5 mb-5">
+      <Container id="courses" className="mt-5 mb-5">
         <div className="text-center">
         <h1 style={{color: "#FFC200", fontSize: "3.5rem"}}>Our Courses</h1>
         <h4>What You Will Learn</h4>
