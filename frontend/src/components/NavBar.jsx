@@ -13,7 +13,6 @@ function NavBar() {
       expand="lg"
       sticky="top"
       className="justify-content-between"
-      justify-content-between
     >
       <Container fluid>
         <Navbar.Brand className="logotext" href="/">

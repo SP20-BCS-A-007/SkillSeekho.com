@@ -13,7 +13,7 @@ const AboutUs = () => {
         link={"/courses"}
       />
       <h1>Under Deverlopment</h1>
-      <h1>Under Deverlopment</h1>
+      
         </>
      );
 }

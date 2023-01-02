@@ -5,6 +5,7 @@ import axios from "axios";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import {HourglassBottom} from 'react-bootstrap-icons';
 
 const CourseCard = () => {
   const [courses, setCourses] = useState([]);
@@ -35,10 +36,11 @@ const CourseCard = () => {
                 <Card.Img style={{height: "14rem"}} variant="top" src={course.img_url} />
                 <Card.Body>
                   <Card.Title>{course.title}</Card.Title>
-                  <Card.Text>{course.description}</Card.Text>
+                  <Card.Text className="mb-1">{course.description}</Card.Text>
+                  <p style={{fontWeight: "bold", color: '#69757D'}}><HourglassBottom style={{marginBottom: "2px"}} color="#FFC200" size={20}/>{course.time}</p>
                 <div style={{textAlign: "right"}} >
                 <p style={{fontSize: '1.3rem', fontFamily: "cursive", }}><span style={{fontFamily: "sans-serif", fontWeight: 'bold'}}>Price: </span>{course.price} Rs</p>
-                <Button variant="warning">See More Details</Button>
+                <Button className="text-white" variant="warning">See More Details</Button>
                 </div>
                 </Card.Body>
                

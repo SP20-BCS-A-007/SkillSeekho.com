@@ -20,10 +20,10 @@ const Courses = () => {
       />
       <Container id="courses" className="mt-5 mb-5">
         <div className="text-center">
-          <h2 style={{ color: "#FFC200", fontSize: "3rem" }}>
+          <h2 className="text-secondary" style={{fontSize: "3rem" }}>
             All Courses We Offer
           </h2>
-          <h4>What You Will Learn</h4>
+          <h5 className="text-warning">What You Will Learn</h5>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi illum
             vero neque numquam quas! Porro cum nobis, rem fugiat sapiente non
@@ -38,12 +38,12 @@ const Courses = () => {
         </Row>
       </Container>
 
-      <div id="courses" className="mt-5 mb-0 bg-secondary p-30">
+      <div id="courses" className="mt-5 mb-0 p-30" style={{backgroundColor: "#FCE38A"}}>
         <div className="text-center p-5">
-          <h1 style={{ color: "#FFC200", fontSize: "3.5rem" }}>
+          <h1 className="text-secondary" style={{ fontSize: "3.5rem" }}>
             Join our Community
           </h1>
-          <p className="text-white">
+          <p className="text-dark">
             Enter your email address to register to our newsletter subscription
             delivered on regular basis!
           </p>
